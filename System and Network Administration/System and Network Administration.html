@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System and Network Administration</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="shortcut icon" href="Images/SNA.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="btn_one">
+            <label for="check">
+                <i class="btn_on i">
+                    =
+                </i>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </label>
+        </div>
+        <div class="side_bar">
+            <div class="logo">
+                <a href="#">Malick</a>
+            </div>
+            <div class="btn_two">
+                <label for="check">
+                    <i class="btn_close i">
+                        X
+                    </i>
+                </label>
+            </div>
+            <div class="topics">
+                <div id="page_title"><b>System and Network Administrations</b></div>
+                <ul id="topic">
+                    <li class="Topic"><a href="#DNS">Domain Name System</a></li>
+                    <li><a href="#what_is_domain_name">What is Domain Name</a></li>
+                    <li><a href="#purpose_of_naming">Purpose of Naming</a></li>
+                    <li><a href="#structure_of_domain_name">Structure of Domain Name</a></li>
+                    <li><a href="#top_level_domain">Top Level Domain</a></li>
+                    <li><a href="#organisational_generic_domain">Generic Domain</a></li>
+                    <li><a href="#geographical_domains">Geographical Domains</a></li>
+                    <li><a href="#reverse_domain">Revese Domain</a></li>
+                    <li><a href="#working_of_dns">Working of DNS</a></li>
+                    <li class="Topic"><a href="#features_of_dns">Features of DNS</a></li>
+                    <li><a href="#global_distribution">Global Distribution</a></li>
+                    <li><a href="#scalablity">Scalability</a></li>
+                    <li><a href="#dynamicity">Dynamicity</a></li>
+                    <li><a href="#relibility">Relibility</a></li>
+                    <li><a href="#loose_coherence">Loose Coherence</a></li>
+                    <li class="Topic"><a href="#ssh_key_based">Key Based Authentication (SSH)</a></li>
+                    <li><a href="#intro_key_based">Introduction</a></li>
+                    <li><a href="#overview_ssh">Overview of SSH</a></li>
+                    <li><a href="#encryption_in_ssh">Encryption In SSH</a></li>
+                    <li><a href="#installing_ssh">Installing SSH</a></li>
+                    <li><a href="#setting_remote_access_linux">Setting Remote Access Linux</a></li>
+                    <li><a href="#managing_multiple_keys">Managing Multiple Keys</a></li>
+                    <li><a href="#setting_remote_access_window">Setting Remote Access Window</a></li>
+                    <li><a href="#authentication_using_GUI">Authentication Using GUI</a></li>
+                    <li><a href="#private_key_putty">Private key in PuTTY</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="notes">
+            <section class="tutorial">
+                <header>
+                    <h1>System and Network Administration</h1>
+                    <p>University of Education Lahore, Faisalabad Campus</p>
+                </header>
+                <article>
+                    <h2 id="DNS">Domain Name System (DNS)</h2>
+                    <h3 id="what_is_domain_name">What is Domain Name</h3>
+                    <p>
+                        Domain name is a way to identify and locate computers connected to internet. Every organisation has its
+                        own domain name and no two organisation have same domain name. A domain name consist of two or more
+                        components saperated by period called dot (.). A common example of domain name is
+                    <ul id="tutorial_list">
+                        <li>www.yahoo.com</li>
+                        <li>www.google.com</li>
+                    </ul>
+                    Once a domain name is established, subdomains can be created within the domain. For example: the domain name
+                    for a university may be "ue.edu.pk" and its subdomain for a saperate campus may be "fsd.ue.edu.pk"
+                    </p>
+                    <h3 id="purpose_of_naming">Purpose of Naming</h3>
+                    <p>
+                        Addressed are used to locate objects. Here objects are defined as computers or devices connected to the
+                        internet. Instead of remembering IP address of all computers we can remember a name given to the
+                        computer which we refer as domain name of the system. It makes you to go to a specific system more
+                        easily and you do not have to remember the IP name or assign a static IP to all systems. DNS is a system
+                        we use to map from names to resources of several types.
+                    </p>
+                    <h3 id="structure_of_domain_name">Structure of Domain Name</h3>
+                    <p>
+                        A domain name has a following structure:
+                    <ul id="tutorial_list">
+                        <li>last_name subdomain second_level_domain top_level_domain</li>
+                    </ul>
+                    <div class="figure">
+                        <img src="Images/Structure of domain name.png" alt="">
+                    </div>
+                    </p>
+                    <h3 id="top_level_domain">Top Level Domains</h3>
+                    <p>
+                        Top level domains are classified into three types. These are:
+                    <ol id="tutorial_list">
+                        <li>Organisation or Generic Domain</li>
+                        <li>Geographic or Country Domain</li>
+                        <li>Reverse Domain</li>
+                    </ol>
+                    </p>
+                    <h3 id="organisational_generic_domain">Organisation or Generic Domain</h3>
+                    <p>
+                        It consist of three character code which indicates the primary function of the organisation or their
+                        generic behaiviour. Most commonly used top level domains are:
+                    <ul id="tutorial_list">
+                        <li>.com for commercial sites eg www.google.com</li>
+                        <li>.net for networking sites eg www.zedge.net</li>
+                        <li>.gov for government sites eg www.newjersy.gov</li>
+                        <li>.edu for educational sites eg www.ue.edu</li>
+                        <li>.org for non-commercial organisations eg www.eklavya.org</li>
+                        <li>.mil for military organisations eg www.dod.mil</li>
+                        <li>.int for international organisations eg www.itu.int</li>
+                    </ul>
+                    </p>
+                    <h3 id="geographical_domains">Geographical or Country Domains</h3>
+                    <p>
+                        It consists of two characters which represents different countries all over the world. These codes are
+                        standardized by International Standard Organisation (ISO). Some examples of country domains are:
+                    <ul id="tutorial_list">
+                        <li>.in for India</li>
+                        <li>.pk for Pakistan</li>
+                        <li>.jp for Japan</li>
+                        <li>.us for United States</li>
+                        <li>.fr for France</li>
+                        <li>.it for Italy</li>
+                        <li>.au for Australia</li>
+                    </ul>
+                    </p>
+                    <h3 id="reverse_domain">Reverse Domain</h3>
+                    <p>
+                        Reverse domain, also known as reverse DNS (Domain Name System), is a process that maps IP addresses to
+                        domain names. While standard DNS translates human-friendly domain names into IP addresses, reverse DNS
+                        performs the opposite, providing a way to associate an IP address with a domain name.
+                        Example:
+                        Suppose you have the IP address 203.0.113.1 and want to find the corresponding domain name using reverse
+                        DNS. You might discover that the reverse DNS lookup reveals the domain name "example.com." This mapping
+                        allows network administrators to identify the hostname associated with an IP address, aiding in
+                        troubleshooting, security, and network management.
+                    </p>
+                    <h3 id="working_of_dns">Working of DNS</h3>
+                    <p>
+                        Each domain name has a corresponding IP address assigned or linked with it. When a user enter the domain
+                        name in the address bar, the corresponding IP address is supplied to the user. This type of translation
+                        of domain name into an IP is done by a system called Domain Name System. Mainly Domain name system is a
+                        colection of database that contain information about the domain names and IPs linked to them.
+                    <div class="figure">
+                        <img src="Images/working of dns.jpg" alt="">
+                    </div>
+                    When an application program needs to communicate with other computers, it needs to translate the name and
+                    the other computer into its IP address. The application progarm that request the service becomes the client
+                    of DNS. It then sends the request to DNS server. The server looks up the name and then returns the correct
+                    IP address to the client. A large number of DNS servers may get involved in this process of getting correct
+                    IP address. After receiving the correct IP address, computers start to communicate with eachothers.
+                    </p>
+                    <h2 id="features_of_dns">Features of DNS</h2>
+                    <h3 id="global_distribution">Global Distribution</h3>
+                    <p>
+                        The data in a DNS server is maintained locally but it is retrieved globally. There is no single DNS
+                        server that has all DNS data. Any device can look into DNS and DNS lookups can be performed by any
+                        device that sends request to the DNS. The site that is often used again again can be cacheable to
+                        improve performance.
+                    </p>
+                    <h3 id="scalablity">Scalability</h3>
+                    <p>
+                        There is no size limit of database in a DNS server and a server may have over 20 millions names. Atleast
+                        24,000 queries can be handled per second and there is no limit to the number of queries. Querires are
+                        distributed among Masters, Slaves and Caches.
+                    <ul id="tutorial_list">
+                        <li><b>Master: </b>The master DNS server is the authoritative source for a particular DNS zone. It holds
+                            the original and definitive DNS records for a domain. This server is where DNS administrators
+                            create, update, and maintain DNS records for the domain. Changes made on the master server are
+                            propagated to secondary (slave) servers. Typically, these servers are responsible for the primary
+                            DNS zone and its records.</li>
+                        <li><b>Slaves: </b>Slave DNS servers, also known as secondary DNS servers, obtain DNS zone data from the
+                            master DNS server. They act as backups and help distribute the load for the same DNS zone. In the
+                            event that the master server becomes unavailable, the slave servers can continue to provide DNS
+                            resolution for the domain. Slave servers periodically synchronize their data with the master server
+                            to ensure they have up-to-date DNS information.</li>
+                        <li><b>Cache: </b>A DNS cache server, also referred to as a caching DNS resolver, doesn't host
+                            authoritative DNS records for any specific domain. Instead, it temporarily stores recently queried
+                            DNS information in its cache. When a user's device requests a domain resolution, the cache server
+                            first checks its cache for the answer. If the information is present, it returns the result,
+                            speeding up the resolution process. If the data is not in its cache, it queries authoritative DNS
+                            servers to obtain the answer and then stores it for future reference. Caching DNS servers help
+                            reduce the load on authoritative servers and improve overall DNS query efficiency.</li>
+                    </ul>
+                    </p>
+                    <h3 id="dynamicity">Dynamicity</h3>
+                    <p>
+                        Database of DNS sever can be updated dynamically like add/delete/modify any record. There is a master
+                        database of all DNS servers and only this server is dynamically updated which makes a single point of
+                        faliure.
+                    </p>
+                    <h3 id="relibility">Relibility</h3>
+                    <p>
+                        When master server is updated, it automatically update all slave servers and data is copied to multiple
+                        slaves. A client can send query to master server and any copy at a slave server. DNS protocols can use
+                        either TCP or UDP. If it is set to UDP, DNS protocol handle retransmission, sequencing, etc.
+                    </p>
+                    <h3 id="loose_coherence">Loose Coherence</h3>
+                    <p>
+                        The database in DNS is always internally consistent. Each version of a subset of database (a zone) has a
+                        serial number. The serial number change on every incriment on the database. Changes to master copy of
+                        database are replicated or incrimented according to the timing set by zone administrator. He also set
+                        the timeout for data expiration of cached data.
+                    </p>
+                    <h2 id="ssh_key_based">Key Based Authentication (SSH)</h2>
+                    <h3 id="intro_key_based">Introduction</h3>
+                    <p>
+                        When an Ubuntu system is first installed, it is not configured by default to allow remote command-line
+                        access via Secure Shell (SSH) connections. When installed, SSH provides password protected and encrypted
+                        access to the system for the root account and any other users added during the installation phase.
+                    </p>
+                    <h3 id="overview_ssh">Overview of SSH</h3>
+                    <p>
+                        SSH is designed to allow secure remote access to systems for the purposes of gaining shell access and
+                        transferring files and data. SSH can also be used to provide a secure tunnel through which remote access
+                        to the GNOME desktop can be achieved over a network connection. A basic SSH configuration consists of a
+                        <span class="discriptive" title="Used on the computer establishing the connection">client</span> and a
+                        <span class="discriptive"
+                            title="Running on the system to which the connection is to be established">server</span>.
+                    </p>
+                    <p>
+                        A user might, for example, use an SSH client running on a Linux, Windows or macOS system to connect to the SSH server running on an Ubuntu system to gain access to a shell command-line prompt or to perform file transfers. All of the communications between client and server, including the password entered to gain access, are encrypted to prevent outside parties from intercepting the data.
+                    </p>
+                    <p>
+                        The inherent weakness in a basic SSH implementation is that it depends entirely on the strength of the passwords assigned to the accounts on the system. If a malicious party is able to identify the <span class="discriptive" title="Either through guess work, subterfuge or a brute force attack">password for an account</span> the system becomes vulnerable. This weakness can be addressed by implementing SSH key-based authentication.
+                    </p>
+                    <h3 id="encryption_in_ssh">Encryption In SSH</h3>
+                    <p>
+                        SSH key-based authentication makes use of <span class="discriptive" title="Has two different keys (public and private key)">asymmetric</span> key encryption to add an extra layer of security to remote system access. This is completly based on the concept of using a pair of keys, one private and one public. In a public key encryption system, the public key is used to encrypt data that can only be decrypted by the owner of the private key.
+                    </p>
+                    <p>
+                        In the case of SSH key-based authentication, the private key is held by the host on which the SSH client is located while the corresponding public key resides on the system on which the SSH server is running. It is important to protect the private key, since ownership of the key will allow anyone to log into the remote system.
+                    </p>
+                    <h3 id="installing_ssh">Installing SSH</h3>
+                    <p>
+                        If the SSH server is not already installed and running on the system, it can be added using the following commands: 
+                    </p>
+                    <p>
+                        Installation of SSH server:
+                        <div class="codes">
+                            <code>
+                                # apt install openssh-server
+                            </code>
+                        </div>
+                    </p>
+                    <p>
+                        Starting SSH server's Services:
+                        <div class="codes">
+                            <code>
+                                # systemctl start sshd.service
+                            </code>
+                        </div>
+                    </p>
+                    <p>
+                        Enabling SSH server's Servers:
+                        <div class="codes">
+                            <code>
+                                # systemctl enable sshd.service
+                            </code>
+                        </div>
+                    </p>
+                    <h3 id="setting_remote_access_linux">Setting Remote Access Linux</h3>
+                    <p>
+                        The first step in setting up SSH key-based authentication is to generate the key pairs on the client system. If the client system is running Linux or macOS, this is achieved using the ssh-keygen utility:
+                        <div class="codes">
+                            <code>
+                                # ssh-keygen <br>
+                                Generating public/private rsa key pair. <br>
+                                Enter file in which to save the key <br>
+                                (/home/username/.ssh/id_rsa):
+                            </code>
+                        </div>
+                    </p>
+                    <p>
+                        Press the Enter key to accept the default location for the key files. This will place two files in the .ssh sub-directory of the current user's home directory. The private key will be stored in a file named <span class="discriptive" title="Algorithm used for creating encryption keys">id_rsa</span> while the public key will reside in the file named id_rsa.pub.
+                    </p>
+                    <p>
+                        Next, ssh-keygen will prompt for a passphrase with which to protect the private key. For better security, use of a passphrase is recommended. Then finally, the ssh-keygen tool will generate the following output indicating that the keys have been generated:
+                        <div class="codes">
+                            <code>
+                                Enter passphrase (empty for no passphrase): <br>
+                                Your identification has been saved in /home/neil/.ssh/id_rsa.<br>
+                                Your public key has been saved in /home/neil/.ssh/id_rsa.pub.<br>
+                                The key fingerprint is:<br>
+                                SHA256:FOLGWEEGFIj WnCT5wtTOv5VK4hdimzWghZiz UEMYbfo<br>
+                                (username)@(hostname)<br>
+                                The key's randomart image is:<br>
+                                +---[RSA 2048]----+<br>
+                                |.BB+=+*.. |<br>
+                                |o+B= * . . |<br>
+                                |===.. + . |<br>
+                                |*+ * . . |<br>
+                                |.++ o S |<br>
+                                |..E+ * o |<br>
+                                | o B * |<br>
+                                | + + |<br>
+                                | . |<br>
+                                +----[SHA256]-----+
+                            </code>
+                        </div>
+                    </p>
+                    <p>
+                        The next step is to install the public key onto the remote server system. This can be achieved using the ssh-copy-id utility as follows:
+                        <div class="codes">
+                            <code>
+                                $ ssh-copy-id username@remote_hostname
+                            </code>
+                        </div>
+                    </p>
+                    <p>
+                        For Example:
+                        <div class="codes"><code>
+                            $ ssh-copy-id neil@192.168.1.100 <br>
+                            /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: <br>
+                            "/home/neil/.ssh/id_rsa.pub" <br>
+                            /usr/bin/ssh-copy-id: INFO: attempting to log in with the new <br>
+                            key(s), to filter out any that are already installed <br>
+                            /usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- <br>
+                            if you are prompted now it is to install the new keys <br>
+                            neil@192.168.1.100's password: <br>
+                            Number of key(s) added: 1 <br>
+                            Now try logging into the machine, with: "ssh <br>
+                            'neil@192.168.1.100'" <br>
+                            and check to make sure that only the key(s) you wanted were <br>
+                            added.
+                        </code></div>
+                    </p>
+                    <p>
+                        Once the key is installed, test that the authentication works by attempting a remote login using the ssh client:
+                        <div class="codes"><code>
+                            $ ssh -l (username) (hostname)
+                        </code></div>
+                    </p>
+                    <p>
+                        If the private key is encrypted and protected with a passphrase, enter the phrase when prompted to complete the authentication and establish remote access to the Ubuntu system:
+                        <div class="codes"><code>
+                            Enter passphrase for key '/home/neil/.ssh/id_rsa': <br>
+                            Last login: Thu Feb 21 13:41:23 2019 from 192.168.1.101 <br>
+                            [neil@demosystem02 ~]$
+                        </code></div>
+                    </p>
+                    <p>
+                        Once you have verified that key-based authentication works, log into the remote system, edit the /etc/ssh/ssh_config file and change the PasswordAuthentication setting to no:
+                        <div class="codes"><code>
+                            PasswordAuthentication no
+                        </code></div>
+                    </p>
+                    <p>
+                        To reload the service of SSH, type the following command:
+                        <div class="codes"><code>
+                            # systemctl restart sshd.service
+                        </code></div>
+                    </p>
+                    <p>
+                        From this point on, it will only be possible to remotely access the system using SSH key-based authentication.
+                    </p>
+                    <h3 id="managing_multiple_keys">Managing Multiple Keys</h3>
+                    <p>
+        
+                    </p>
+                    <h3 id="setting_remote_access_window">Setting Remote Access Window</h3>
+                    <p>
+                        Recent releases of Windows 11 include a subset of the OpenSSH implementation that is used by most Linux and macOS systems as part of Windows PowerShell. This allows SSH key-based authentication to be set up from a Windows 11 client using similar steps to those outlined above for Linux and macOS.
+                    </p>
+                    <p>
+                        To open Windows PowerShell on a Windows 11 system press the Win+X keyboard combination and select it from the menu, or locate and select it from the Start menu. Once running, the PowerShell window will appear as shown:
+                        <div class="figure"><img src="Images/powershell.png" alt="powershell figure"></div>
+                    </p>
+                    <p>
+                        If you already have a private key from another client system, simply copy the id_rsa file to a folder named .ssh on the Windows 11 system. Once the file is in place, test the authentication within the PowerShell window as follows:
+                        <div class="codes"><code>
+                            $ ssh -l (username)@(hostname)
+                        </code></div>
+                    </p>
+                    <p>
+                        For example:
+                        <div class="codes"><code>
+                            PS C:\Users\neil> ssh -l neil 192.168.1.101 <br>
+                            Enter passphrase for key 'C:\Users\neil/.ssh/id_rsa':
+                        </code></div>
+                        <p>Enter the passphrase when prompted and complete the authentication
+                            process.</p>
+                    </p>
+                    <p>
+                        If an existing private key does not yet exist, generate a new private and public key pair within the PowerShell window using the ssh-keygen utility using the same steps as those outlined for Linux and macOS. Once the keys have been generated, they will once again be located in the <span class="discriptive" title="It is hidden for user by default in windows">.ssh directory</span> of the current user's home folder, and the public key file id_rsa.pub will need to be installed on the remote Ubuntu system.
+                    </p>
+                    <p>
+                        To view or display SSH public key, the PowerShell window, change directory into the .ssh sub-directory and display the content of the public key id_rsa.pub file:
+                        <div class="codes"><code>
+                            PS C:\Users\neil> cd .ssh  <br>
+                            PS C:\Users\neil\.ssh> type id_rsa.pub <br>
+                            ssh-rsa <br>
+                            AAAAB3NzaC1yc2EAAA ADAQABAAABAQDFgx1vzu59lll6/ uQw7FbmKVsQ3fzLz9 <br>
+                            MW1fgo4sdsxXp81wCH NAlqcjx1Pgr9BJPXWUMInQOi7BQ 5I+vc2xQ2AS0kMq3Z <br>
+                            H9ybWuQe/U2GjueXZd 0FKrEXrT55wM36Rm6Ii3roUCoGC zGR8mn95JvRB3VtCy <br>
+                            DdzTWSi8JBpK5gV5oO xNTNPsewlLzouBlCT1qW3CKwEiI wu8S9MTL7m3nrcaNe <br>
+                            LewTTHevvHw4QDwzFQ +B0PDg96fzsYoTXVhzyHSWyo6H0 gqrft7aK+gILBtEIh <br>
+                            WTkSVEMAzy1piKtCr1 IYTmVK6engv0aoGtMUq6FnOeGp5 FjvKkF4aQkh1QR28r <br>
+                            neil@DESKTOP-S8P8D 3N
+                        </code></div>
+                    </p>
+                    <p>
+                        Highlight or select the content of the file and copy it using the Ctrl-C keyboard shortcut. Remaining within the PowerShell window, log into the remote system using password authentication:
+                        <div class="codes"><code>
+                            PS C:\Users\neil\.ssh> ssh -l (username) (hostname)
+                        </code></div>
+                    </p>
+                    <p>
+                        Once signed in, check if the .ssh sub-directory exists. If it does not, create it as follows:
+                        <div class="codes"><code>$ mkdir .ssh</code></div>
+                    </p>
+                    <p>
+                        Change directory into .ssh and check whether a file named authorized_keys already exists. If it does not, create it and paste the content of the public key file from the Windows 10 system into it. If the authorized_keys file already exists it most likely already contains other keys. If this is the case, edit the file and paste the new public key at the end of the file. The following file, for example, contains two keys:
+                        <div class="codes"><code>
+                            ssh-rsa <br>
+                            AAAAB3NzaC1yc2EAAAADAQABAAABAQC zRWH27Xs8ZA5rIbZXKgxFY5XXauMv+6 <br>
+                            F5PljBLJ6j+9nkmykVe3GjZTp3oD+KM RbT2kTEPbDpFD67DNL0eiX2ZuEEiYsx <br>
+                            ZfGCRCPBGYmQttFRHEAFnlS1Jx/G4W5 UNKvhAXWyMwDEKiWvqTVy6syB2Ritoa <br>
+                            k+D/Sc8nJflQ6dtw0jBs+S7Aim8TPfg pi4p5XJGruXNRScamk68NgnPfTL3vT7 <br>
+                            26EuABCk6C934KARd+/AXa8/5rNOh4E TPstjBRfFJ0tpmsWWhhNEnwJRqS2LD0 <br>
+                            ug7E3yFI2qsNKGEzvAYUC8Up45MRP7l iR3aMlCBil1tsy9R+IB7oMEycZAe/qj <br>
+                            neil@localhost.localdomain <br>
+                            ssh-rsa <br>
+                            AAAAB3NzaC1yc2EAAAADAQABAAABAQD Fgx1vzu59lll6/uQw7FbmKVsQ3fzLz9 <br>
+                            MW1fgo4sdsxXp81wCHNAlqcjx1Pgr9B JPXWUMInQOi7BQ5I+vc2xQ2AS0kMq3Z <br>
+                            H9ybWuQe/U2GjueXZd0FKrEXrT55wM3 6Rm6Ii3roUCoGCzGR8mn95JvRB3VtCy <br>
+                            DdzTWSi8JBpK5gV5oOxNTNPsewlLzou BlCT1qW3CKwEiIwu8S9MTL7m3nrcaNe <br>
+                            LewTTHevvHw4QDwzFQ+B0PDg96fzsYo TXVhzyHSWyo6H0gqrft7aK+gILBtEIh <br>
+                            WTkSVEMAzy1piKtCr1IYTmVK6engv0a oGtMUq6FnOeGp5FjvKkF4aQkh1QR28r <br>
+                            neil@DESKTOP-S8P8D3N
+                        </code></div>
+                    </p>
+                    <p>
+                        Once the public key is installed on the server, test the authentication by logging in to the server from within the Windows 11 PowerShell window, for example:
+                        <div class="codes"><code>
+                            PS C:\Users\neil\.ssh> ssh -l neil 192.168.1.100 <br>
+                            Enter passphrase for key 'C:\Users\neil/.ssh/id_rsa':
+                        </code></div>
+                        <p>When key-based authentication has been set up for all the accounts and verified, disable password authentication on the Ubuntu system as outlined at the end of the previous section.
+                            </p>
+                    </p>
+                    <h3 id="authentication_using_GUI">Authentication Using GUI Interface PuTTY</h3>
+                    <p>
+                        PuTTY tool is widely used for remote access to any server if the operating system do not support OPEN-SSH. The first step in using PuTTY is to download and install it on any Windows systems that need an SSH client. PuTTY is a free utility and can be downloaded using the following link:
+                        <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" class="discriptive_link">www.chiark.greenend.org.uk/</a>
+                    </p>
+                    <p>
+                        Download the Windows installer executable that matches your <span class="discriptive" title="32-bit and 64-bit versions are available">Windows system</span> then execute the installer to complete installation.
+                    </p>
+                    <p>
+                        If a private key already exists on another system, create the .ssh folder in the home folder of the current user and copy the private id_rsa key into it. 
+                    </p>
+                    <p>
+                        Next, the private key file needs to be converted to a PuTTY private key format file using the PuTTYgen tool. Locate this utility in the Windows Start menu and launch it:
+                        <div class="figure">
+                                <img src="Images/Putty interface.png" alt="Putty Interface" >
+                        </div>
+                    </p>
+                    <p>
+                        Click on the load button to <span class="discriptive" title="Note: select (*All Files) to view all files to search for the specific key">load</span> any existing key which was created previously. Once located, select the file and load it into PuttyGen and when required, enter the paraphrase/passphrase. Once the private key has been imported, save it as a PuTTY key file by clicking on the Save Private Key button.
+                    </p>
+                    <p>
+                        Launch PuTTY from the Start menu and enter the IP address or host name of the remote server into the main screen before selecting the Connection -> SSH -> Auth category in the left-hand panel as highlighted:
+                        <div class="figure">
+                            <img src="Images/Putty Configuration.png" alt="">
+                        </div>
+                    </p>
+                    <p>
+                        Click on the Browse button next to the Private key for authentication field and navigate to and select the previously saved PuTTY private key file.
+                    </p>
+                    <h3 id="private_key_putty">Private key in PuTTY</h3>
+                    <p>
+                        If keys do not already exist, they can be created using the PuTTYgen tool which is included with the main PuTTY installation. To create new keys, launch PuttyGen and click on the Generate button highlighted:
+                        <div class="figure" style="height: 400px;"><img src="Images/Putty interface.png" alt="" height="100%"></div>
+                    </p>
+                    <p>
+                        Once the keys have been generated, save the files to suitable locations using the Save public key and Save private key buttons. You can also change the size of the key to any size whichby default will be 2048. You can also select the type of algorithm you want to use in the <span class="discriptive" title="By default it is RSA">encryption process</span> of keys.
+                    </p>
+                </article>
+            </section>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

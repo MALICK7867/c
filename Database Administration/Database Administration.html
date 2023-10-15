@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Administration</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="shortcut icon" href="Images/Favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="btn_one">
+            <label for="check">
+                <i class="btn_on i">
+                    =
+                </i>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </label>
+        </div>
+        <div class="side_bar">
+            <div class="logo">
+                <a href="#">Malick</a>
+            </div>
+            <div class="btn_two">
+                <label for="check">
+                    <i class="btn_close i">
+                        X
+                    </i>
+                </label>
+            </div>
+            <div class="topics">
+                <div id="page_title"><b>System and Network Administrations</b></div>
+                <ul id="topic">
+                    <li class="Topic"><a href="#introduction_to_database">Introduction</a></li>
+                    <li><a href="#what_is_database">What is DataBase</a></li>
+                    <li><a href="#database_management_system">Database Management System</a></li>
+                    <li class="Topic"><a href="#common_terms">Terms in DBMS</a></li>
+                    <li><a href="#entities">Entities</a></li>
+                    <li><a href="#attributes">Attributes</a></li>
+                    <li class="Topic"><a href="#keys_in_db">Keys in Database</a></li>
+                    <li><a href="#primary_key">Primary Key</a></li>
+                    <li><a href="#super_key">Super Key</a></li>
+                    <li><a href="#difference_between_super_and_primary">Super vs Primary Key</a></li>
+                    <li><a href="#composite_key">Composite Key</a></li>
+                    <li><a href="#Candidate_Key">Candidate Key</a></li>
+                    <li><a href="#Foreign_Key">Foreign Key</a></li>
+                    <li><a href="#Alternate_Key">Alternate Key</a></li>
+                    <li class="Topic"><a href="#DDL">Data Definition Language</a></li>
+                    <li><a href="#introduction_to_DDL">Introduction</a></li>
+                    <li><a href="#create_database">Create Command</a></li>
+                    <li><a href="#alter">Alter Command</a></li>
+                    <li><a href="#drop_command">Drop Command</a></li>
+                    <li class="Topic"><a href="#DML">Data Manupulation Language</a></li>
+                    <li><a href="#intro_to_dml">Introduction</a></li>
+                    <li><a href="#insert_data">Insert Command</a></li>
+                    <li><a href="#update_data">Update Command</a></li>
+                    <li><a href="#delete_data">Delete Command</a></li>
+                    <li><a href="#select_command">Select Command</a></li>
+                    <li class="Topic"><a href="#DCL">Data Control Language</a></li>
+                    <li><a href="#intro_to_dcl">Introduction</a></li>
+                    <li><a href="#grant">Grant Command</a></li>
+                    <li><a href="#revoke">Revoke Command</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="notes">
+            <section class="tutorial">
+                <header>
+                    <h1>Database Administration</h1>
+                    <p>University of Education Lahore, Faisalabad Campus</p>
+                </header>
+                <article>
+                    <h2 id="introduction_to_database">Introduction</h2>
+                    <h3 id="what_is_database">What is Database</h3>
+                    <p>
+                        A collection of information organized in such a way that a computer program can quickly select desired piece of data. Database is just like electronical way of storing files. A database is a structured collection of data that is organized and stored in a way that allows for efficient retrieval, management, and manipulation of that data. Databases play a crucial role in modern information systems, serving as the backbone for data storage and retrieval in applications, websites, and virtually any system that deals with structured data.
+                    </p>
+                    <h3 id="database_management_system">Database Management System</h3>
+                    <p>
+                        A software used to manage or use database in a computer system is known as DBMS or database management system. It allows you to create and manage database same like Microsoft Word helps you to create and manage word files or documents. It is a computer software which provide interface between a user and database. It is a software which is used to create, update, query and do administration process in database. Some examples of DBMS are: Oracle, MySQL, PostgreSQL, Ms SQL server, Firebird, etc.
+                    </p>
+                    <h2 id="common_terms">Terms in DBMS</h2>
+                    <h3 id="entities">Entities</h3>
+                    <p>
+                        An entity is a distinct and uniquely identifiable object or concept, typically representing a real-world item or an abstract idea. In databases and data modeling, entities have attributes that describe them, and they can be related to other entities to represent how they interact. Some examples of entities are: Employee, student, places, etc.
+                    </p>
+                    <h3 id="attributes">Attributes</h3>
+                    <p>
+                        Attributes are characteristics or properties of an entity that provide information about that entity. Attributes describe specific details or features of an entity, such as its name, age, or address. For example: Employee_name, Employee_salary, etc.
+                    </p>
+                    <h3 id="relationship">Relationship</h3>
+                    <p>
+                        Relationship is an association between two or more entities and describe how these entities are related to each other. There are some common types of relationships. ie.
+                        <ul id="tutorial_list">
+                            <li>One to One</li>
+                            <li>One to Many</li>
+                            <li>Many to Many</li>
+                        </ul>
+                    </p>
+                    <h2 id="keys_in_db">Keys in Database</h2>
+                    <h3 id="primary_key">Primary Key</h3>
+                    <p>
+                        A primary key is a unique identifier for each row (record) in a table. It ensures that each row is uniquely identifiable within the table. A primary key can consist of one or multiple columns. Primary keys are used to make sure that no data is repeated or replicated.
+                    </p>
+                    <h3 id="super_key">Super Key</h3>
+                    <p>
+                        A super key is a set of one or more columns that can be used to uniquely identify records in a table. It may contain more columns than necessary to uniquely identify records.
+                    </p>
+                    <h3 id="difference_between_super_and_primary">Difference Between Super and Primary Key</h3>
+                    <div class="differ">
+                            <span>
+                                <b>Primary Key:</b>
+                                <ul id="tutorial_list">
+                                    <li>
+                                        A primary key is a specific type of key used in a relational database.
+                                    </li>
+                                    <li>
+                                        It is a minimal set of one or more columns that uniquely identifies each record (row) in a table.
+                                    </li>
+                                    <li> 
+                                        A primary key enforces the uniqueness constraint, meaning that no two rows in the table can have the same values in the primary key columns.
+                                    </li>
+                                    <li>
+                                        The primary key is used to establish the integrity and relationships of the data within the table and can be used as a reference (via foreign keys) in other tables.
+                                    </li>
+                                    <li> 
+                                        There can be only one primary key per table.
+                                    </li>
+                                    <li>
+                                        Typically, primary keys are chosen based on the business requirements and should have a real-world meaning or significance.
+                                    </li>
+                                </ul>
+                            </span>
+                            <span>
+                                <b>Super Key:</b>
+                                <ul id="tutorial_list">
+                                    <li>A super key is a broader concept and is not limited to a specific key type.</li>
+                                    <li>It is any set of one or more columns in a table that can be used to uniquely identify rows within that table.</li>
+                                    <li>A super key may or may not be minimal, meaning it may contain more columns than necessary to guarantee uniqueness.</li>
+                                    <li>Super keys are not necessarily used as primary keys.</li>
+                                    <li>They are often used for indexing, grouping, and querying purposes in the database.</li>
+                                    <li>Unlike primary keys, super keys do not impose the uniqueness constraint by themselves.</li>
+                                </ul>
+                            </span>
+                    </div>
+                    <h3 id="composite_key">Composite Key</h3>
+                    <p>
+                        A composite key is a primary key that consists of two or more columns in a table. It is used when a single column cannot uniquely identify records, but the combination of multiple columns can.
+                    </p>
+                    <h3 id="Candidate_Key">Candidate Key</h3>
+                    <p>
+                        Candidate keys are columns or sets of columns in a table that can potentially serve as the primary key. They meet the uniqueness requirement, but one is selected as the primary key.
+                    </p>
+                    <h3 id="Foreign_Key">Foreign Key</h3>
+                    <p>
+                        A foreign key is a column or a set of columns in one table that refers to the primary key in another table. It establishes relationships between tables and enforces referential integrity.
+                    </p>
+                    <h3 id="Alternate_Key">Alternate Key</h3>
+                    <p>
+                        An alternate key is a candidate key that was not chosen as the primary key. It can still be used to uniquely identify records in the table.
+                    </p>
+                    <h2 id="DDL">Data Definition Language</h2>
+                    <h3 id="introduction_to_DDL">Introduction</h3>
+                    <p>
+                        A language specifically used to define the structure or schema of a database is called data definition language. DDL, or Data Definition Language, is a subset of <span class="discriptive" title="Structured Query Language">SQL</span> used for defining and managing the structure of a database. DDL statements are used to create, modify, and delete database objects, such as tables, indexes, and constraints. DDL is essential for designing the database schema and ensuring data integrity. DDL statements are typically executed by database administrators and developers during the design and maintenance of a database. They are essential for defining the structure of the database and ensuring that it functions correctly and efficiently. These structures include:
+                        <ul id="tutorial_list">
+                            <li>Create</li>
+                            <li>Drop</li>
+                            <li>Alter</li>
+                            <li>Truncate</li>
+                        </ul>
+                    </p>
+                    <h3 id="create_database">Create Command</h3>
+                    <p>
+                        To create a database using DDL we can use the following command:
+                        <div class="codes"><code>
+                            CREATE DATABASE dbname;
+                        </code></div>
+                    </p>
+                    <p>
+                        To use a database using DDL we can use the following command:
+                        <div class="codes"><code>
+                            USE dbname;
+                        </code></div>
+                    </p>
+                    <p>
+                        To create a table using DDL we can use the following command:
+                        <div class="codes"><code>
+                            CREATE TABLE table_name ( <br>
+                            column_name1 datatype(size), <br>
+                            column_name2 datatype(size), <br>
+                            column_name3 datatype(size), <br>
+                            PRIMARY KEY (column_name1) <br>
+                            );
+                        </code></div>
+                    </p>
+                    <p>
+                        For example:
+                        <div class="codes"><code>
+                            CREATE TABLE persons ( <br>
+                            personID identity(1,1), <br>
+                            FirstName varchar(255), <br>
+                            Address varchar(255), <br>
+                            City varchar(255), <br>
+                            PRIMARY KEY (personID) <br>
+                            );
+                        </code></div>
+                    </p>
+                    <h3 id="alter">Alter Command</h3>
+                    <p>
+                        The ALTER statement allows you to modify existing database objects, such as adding or dropping columns from a table, or changing the data type of a column. To add a new column to a table we can use the following command:
+                        <div class="codes"><code>
+                            ALTER TABLE persons <br>
+                            ADD COLUMN email VARCHAR(60);
+                        </code></div>
+                    </p>
+                    <p>
+                        To <span class="discriptive" title="Delete">drop</span> a column from a table we can use this code:
+                        <div class="codes"><code>
+                            ALTER TABLE persons DROP COLUMN city;
+                        </code></div>
+                    </p>
+                    <p>
+                        To change name of a column from a table we can use this code:
+                        <div class="codes"><code>
+                            ALTER TABLE persons CHANGE firstname FullName VARCHAR(20);
+                        </code></div>
+                    </p>
+                    <h3 id="drop_command">Drop Command</h3>
+                    <p>
+                        The DROP command is used in a database management system (DBMS) to delete database objects, such as tables, indexes, views, or even entire databases. The specific usage and behavior of the DROP command depend on what you want to delete. <br>
+                        To delete a table from database we use following command:
+                        <div class="codes"><code>
+                            DROP TABLE table_name;
+                        </code></div>
+                    </p>
+                    <p>
+                        DROP DATABASE is used to delete an entire database, including all of its tables, indexes, and other objects. This is a powerful and potentially destructive command, so it should be used with caution. To delete a database we use:
+                        <div class="codes"><code>
+                            DROP DATABASE database_name;
+                        </code></div>
+                    </p>
+                    <h2 id="DML">Data Manupulation Language</h2>
+                    <h3 id="intro_to_dml">Introduction</h3>
+                    <p>
+                        DML (Data Manipulation Language) in a database is a subset of SQL (Structured Query Language) that deals with the retrieval and manipulation of data within a database. DML commands allow you to perform operations on the data stored in the database, including selecting, inserting, updating, and deleting records.
+                    </p>
+                    <h3 id="insert_data">Insert Command</h3>
+                    <p>
+                        The INSERT statement is used to add new records (rows) into a table. You specify the values for each column or provide a subquery to insert data.
+                        <div class="codes"><code>
+                            INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+                        </code></div>
+                    </p>
+                    <h3 id="update_data">Update Command</h3>
+                    <p>
+                        The UPDATE statement is used to modify existing records in a table. You specify the columns to be updated and the new values, as well as a condition to identify the records to be updated.
+                        <div class="codes"><code>
+                            UPDATE table_name <br> SET column1 = new_value <br> WHERE condition;
+                        </code></div>
+                    </p>
+                    <h3 id="delete_data">Delete Command</h3>
+                    <p>
+                        The DELETE statement is used to remove records from a table. You specify a condition to identify which records to delete.
+                        <div class="codes"><code>
+                            DELETE FROM table_name <br> WHERE condition;
+                        </code></div>
+                    </p>
+                    <h3 id="select_command">Select Command</h3>
+                    <p>
+                        The SELECT statement is used to retrieve data from one or more tables in the database. It allows you to specify which columns to retrieve, conditions for filtering data, and the order in which the results are presented.
+                        <div class="codes"><code>
+                            SELECT column1, column2 <br> FROM table_name <br> WHERE condition;
+                        </code></div>
+                    </p>
+                    <h2 id="DCL">Data Control Language</h2>
+                    <h3 id="intro_to_dcl">Introduction</h3>
+                    <p>
+                        DCL (Data Control Language) is a subset of SQL (Structured Query Language) that deals with controlling and managing access to the database. DCL commands are used to set and manage permissions, privileges, and access rights for users and roles. There are two main roles in DCL. These are GRANT and REVOKE.
+                    </p>
+                    <h3 id="grant">Grant Command</h3>
+                    <p>
+                        The GRANT statement is used to provide specific privileges and permissions to users or roles within the database. It allows database administrators to grant various permissions, such as SELECT, INSERT, UPDATE, DELETE, or specific object privileges, to specific users or roles.
+                        <div class="codes"><code>
+                            GRANT ALL/SELECT ON table_name TO 'somename'@'somehost';
+                        </code></div>
+                    </p>
+                    <h3 id="revoke">Revoke Command</h3>
+                    <p>
+                        The REVOKE statement is used to take away previously granted privileges from users or roles. It allows administrators to revoke previously assigned permissions. 
+                        <div class="codes"><code>
+                            REVOKE ALL/SELECT ON table_name FROM 'jeff'@'localhost';
+                        </code></div>
+                    </p>
+                </article>
+            </section>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

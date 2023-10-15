@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals of Web Engineering</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="btn_one">
+            <label for="check">
+                <i class="btn_on i">
+                    =
+                </i>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </label>
+        </div>
+        <div class="side_bar">
+            <div class="logo">
+                <a href="#">Malick</a>
+            </div>
+            <div class="btn_two">
+                <label for="check">
+                    <i class="btn_close i">
+                        X
+                    </i>
+                </label>
+            </div>
+            <div class="topics">
+                <div id="page_title"><b>Fundamentals of Web Engineering</b></div>
+                <ul id="topic">
+                    <li class="Topic"><a href="#media_tags">Media Tags</a></li>
+                    <li><a href="#video_tag">Video Tag</a></li>
+                    <li><a href="#audio_tag">Audio Tag</a></li>
+                    <li><a href="#youtube_embedding">Youtube Embeding</a></li>
+                    <li class="Topic"><a href="#Intro_to_css">Introduction To CSS</a></li>
+                    <li><a href="#what_is_css">What is CSS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="notes">
+            <section class="tutorial">
+                <header>
+                    <h1>Fundamentals of Web Engineering</h1>
+                    <p>University of Education Lahore, Faisalabad Campus</p>
+                </header>
+                <article>
+                    <h2 id="media_tags">Media Tags</h2>
+                    <h3 id="video_tag">Video Tag</h3>
+                    <p>
+                        A tag which is specifically used to add video in an HTML page. There are some attributes that can be added to video player in browser player. These are:
+                        <ul id="tutorial_list">
+                            <li><b>Controls: </b>It adds controls to the player.</li>
+                            <li><b>Autoplay: </b>Makes video play automatically when page is loaded.</li>
+                            <li><b>Loop: </b>Make video play in <span class="discriptive" title="Again and again">loop</span>.</li>
+                            <li><b>Muted: </b>Play video without sound by default.</li>
+                            <li><b>Poster: </b>Apply a thumbnail to a video.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        <div class="codes"><code>
+                            &ltvideo src="source.mp4" controls autoplay loop muted poster="source.png"&gt&lt/video&gt
+                        </code></div>
+                    </p>
+                    <h3 id="audio_tag">Audio Tag</h3>
+                    <p>
+                        A tag which is specifically used to add audio in an HTML page. There are some attributes that can be added to audio player in browser player. These are:
+                        <ul id="tutorial_list">
+                            <li><b>Controls: </b>It adds controls to the player.</li>
+                            <li><b>Autoplay: </b>Makes audio play automatically when page is loaded.</li>
+                            <li><b>Loop: </b>Make audio play in <span class="discriptive" title="Again and again">loop</span>.</li>
+                            <li><b>Muted: </b>Make audio play without any sound.</li>
+                        </ul>
+                    </p>
+                    <div class="codes"><code>
+                        &ltaudio src="source.mp3" controls autoplay loop muted&gt&lt/audio&gt
+                    </code></div>
+                    <h3 id="youtube_embedding">Youtube Embeding</h3>
+                    <p>
+                        Youtube provides a feature in which a youtube video can be played in your HTML page. This feature is known as youtube embeding. YouTube provides a link of that video which will be played on your HTML page. As mentioned earlier, you can add attibutes to youtube embedded video just like a normal video but there are some other ways to add attributes in this type of videos. ie.
+                        <ul id="tutorial_list">
+                            <li>?autoplay = 1 or 0</li>
+                            <li>&Loop = 1 or 0</li>
+                            <li>&Controls = 1 or 0</li>
+                            <li>&Muted = 1 or 0</li>
+                        </ul>
+                    </p>
+                    <div class="codes"><code>
+                        &ltiframe width="560" height="315" src="https://www.youtube.com/embed/dYH6FpmMsus?si=xWONsv29Qi5v1TsF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>&lt/iframe>
+                    </code></div>
+                    <h2 id="Intro_to_css">Introduction To CSS</h2>
+                    <h3 id="what_is_css">What is CSS</h3>
+                    <p>
+                        CSS stands for Cascading Style Sheets. It is used to beautify your web pages. It is very useful for deploying same css for multiple web pages. 
+                    </p>
+                </article>
+            </section>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

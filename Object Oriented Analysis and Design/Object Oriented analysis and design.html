@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Analysis and Design</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="btn_one">
+            <label for="check">
+                <i class="btn_on i">
+                    =
+                </i>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </label>
+        </div>
+        <div class="side_bar">
+            <div class="logo">
+                <a href="#">Malick</a>
+            </div>
+            <div class="btn_two">
+                <label for="check">
+                    <i class="btn_close i">
+                        X
+                    </i>
+                </label>
+            </div>
+            <div class="topics">
+                <div id="page_title"><b>Object Oriented Analysis and Designs</b></div>
+                <ul id="topic">
+                    <li class="Topic"><a href="#Requirement_Analysis_Process">Requirement Analysis Process</a></li>
+            <li><a href="#Requirement_Analysis_Objectives">Requirement Analysis Objectives</a></li>
+            <li><a href="#What_is_Requirement_Validation">What is Requirement Validation</a></li>
+            <li><a href="#Software_Requirement_Specification">Software Requirement Specs</a></li>
+            <li><a href="#Characteristics_of_SRS">Characteristics of SRS</a></li>
+            <li class="Topic"><a href="#Use_Case_Modeling">Use Case Modeling</a></li>
+            <li><a href="#Goals_and_Objective">Goals and Objective</a></li>
+            <li><a href="#Interaction">Interaction</a></li>
+            <li><a href="#What_is_a_Scenerio">What is a Scenerio</a></li>
+            <li><a href="#Advantages_of_use_case_modeling">Advantages of use case</a></li>
+            <li><a href="#Use_Case_Diagram">Use Case Diagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="notes">
+            <section class="tutorial">
+                <header>
+                    <h1>Object Oriented Analysis and Design</h1>
+                    <p>University of Education Lahore, Faisalabad Campus</p>
+                </header>
+                <article>
+                    <h2 id="Requirement_Analysis_Process">Requirement Analysis Process</h2>
+                    <p>
+                        Requirement analysis is a critical phase in the <span class="discriptive"
+                            title="Software Development Life Cycle">SDLC</span>. It involves
+                        gathering, documenting, and analyzing the needs and expectations of stakeholders to define the features
+                        and functionalities of a software system or application. The primary goal of requirement analysis is to
+                        ensure that the final software product meets the intended objectives and satisfies user needs.
+                    </p>
+                    <p>
+                        The process of studying and analyzing the customer and the user/stakeholder needs to arrive at a
+                        definition of software requirements.
+                        Provides software designer with a model of:
+                    <ul id="tutorial_list">
+                        <li>System Information</li>
+                        <li>System Function</li>
+                        <li>System Behavior</li>
+                    </ul>
+                    Model can be translated to data, architectural, and component-level designs and expect to do a little bit of
+                    design during analysis and a little bit of analysis during design.
+                    <div class="figure" id="f0_1" style="height: 250px;">
+                        <img src="Images/figure 0.1.jpg" alt="Figure 0.1" style="height: 250px;">
+                    </div>
+                    </p>
+                    <h3 id="Requirement_Analysis_Objectives">Requirement Analysis Objectives</h3>
+                    <p>
+                    <ol id="tutorial_list">
+                        <li>
+                            <b>Identify customer's needs</b>
+                        </li>
+                        <ul type="disc" id="tutorial_list">
+                            <li>The fundamental objective is to gain a deep understanding of what various stakeholders,
+                                including end-users, customers, and business owners, need and expect from the software. This
+                                involves identifying their goals, challenges, and desired functionalities.</li>
+                        </ul>
+                        <li>
+                            <b>Evaluate system for feasibility</b>
+                        </li>
+                        <ul type="disc" id="tutorial_list">
+                            <li>Evaluating a system for feasibility is an essential step in the early stages of a software
+                                development project. It is typically done during the project initiation phase, before
+                                significant resources are committed. The purpose of feasibility analysis is to determine whether
+                                the proposed software system is worth pursuing, given various constraints and factors.</li>
+                        </ul>
+                        <li>
+                            <b>Perform economic and technical analysis</b>
+                        </li>
+                        <ul type="disc" id="tutorial_list">
+                            <li>It is an essential part of evaluating the feasibility of a software development project. These
+                                analyses help assess whether the project is financially viable and technically feasible.</li>
+                        </ul>
+                        <li>
+                            <b>Allocate functions to system elements</b>
+                        </li>
+                        <ul type="disc" id="tutorial_list">
+                            <li>It is a critical step in system design and architecture. This process involves assigning
+                                specific functions or responsibilities to different components or modules within a system to
+                                ensure that the system as a whole can achieve its intended goals and meet its requirements.</li>
+                        </ul>
+                        <li>
+                            <b>Establish schedule and constraints</b>
+                        </li>
+                        <ul type="disc" id="tutorial_list">
+                            <li>It is a critical part of project management and planning. A well-defined schedule helps ensure
+                                that the project stays on track and is completed within the specified time frame, while
+                                constraints set boundaries and limitations that the project must operate within.</li>
+                        </ul>
+                        <li>
+                            <b>Create system definitions</b>
+                        </li>
+                        <ul type="disc" id="tutorial_list">
+                            <li>It is an important step in the early stages of a project, as it helps ensure that all
+                                stakeholders have a common understanding of what the system is supposed to achieve and how it
+                                will function. System definitions provide a clear and concise description of the project scope
+                                and objectives.</li>
+                        </ul>
+                    </ol>
+                    </p>
+                    <h3 id="What_is_Requirement_Validation">What is Requirement Validation</h3>
+                    <p>
+                        Requirement validation is a crucial step in the software development process. It is the process of
+                        reviewing and evaluating the gathered requirements to ensure that they are <span class="discriptive"
+                            title="Requirement validation ensures that the requirements accurately represent the needs and expectations of the stakeholders. It verifies that the information collected is correct and reflects the true requirements of the system.">accurate</span>,
+                        <span class="discriptive"
+                            title="It checks whether all necessary requirements have been captured and documented. Incomplete requirements can lead to gaps in the system's functionality and potential misunderstandings.">complete</span>,
+                        <span class="discriptive"
+                            title="Requirement validation ensures that there are no conflicts or contradictions among the requirements. Inconsistent requirements can create confusion and make it challenging to design and implement the system.">consistent</span>,
+                        and <span class="discriptive"
+                            title="It assesses whether each requirement is relevant to the project's goals and objectives. Requirements that do not contribute to the project's success may be removed or modified.">meet
+                            the needs</span> of the stakeholders. The primary goal of requirement validation is to identify and
+                        rectify any issues or discrepancies in the requirements before they are used as the basis for designing
+                        and building the software system. <br>Requirements error costs are high so validation is very important.
+                        Fixing a requirements error after delivery may cost up to 100 times the cost of fixing an implementation
+                        error.
+                    </p>
+                    <h3 id="Software_Requirement_Specification">Software Requirement Specification (SRS)</h3>
+                    <p>
+                        SRS is a complete description of the behavior of the system to be developed. It is basically an
+                        organization's understanding (in writing) of a customer or potential client's system requirements and
+                        dependencies at a particular point in time prior to any actual design or development work. It states in
+                        percise and explicit language those functions and capabilities a software system must provide, as well
+                        as states any required constraints by which the system must be abide. SRS is a blueprint for completing
+                        a project with as little cost growth as possible.
+                    </p>
+                    <h3 id="Characteristics_of_SRS">Characteristics of SRS</h3>
+                    <p>
+                        Some Characteristics of SRS are:
+                    <ul id="tutorial_list">
+                        <li><b>Complete: </b>SRS defines precisely all the go-life situations that will be encountered and the system's capability to address them.</li>
+                        <li><b>Consistent: </b> SRS capability functions n performance level are compatible, and the features
+                            don't negate those capability functions.
+                        </li>
+                        <li><b>Accurate: </b> SRS precisely defines the system's capability in a real-world environment.
+                        </li>
+                        <li><b>Modifiable: </b>The logical, hirarchical structure of SRS should facilitate any necessary
+                            modifications.
+                        </li>
+                        <li><b>Ranked: </b>Individual req of SRS r hierarchically arranged according to stability, security,
+                            perceived ease/difficulty of implementation, or other parameters that help in design.
+                        </li>
+                        <li><b>Testable: </b>SRS must be stated in such a manner that unambiguous assessment criteria.
+                        </li>
+                        <li><b>Traceable: </b>Each req in SRS must be uniquely identified to a source (use case, gov reg,
+                            industry standard, etc).
+                        </li>
+                        <li><b>Unambiguous: </b>SRS must contain req statement that can be interpreted in one way only.</li>
+                        <li><b>Valid: </b>All parties n project participants can understand, analyze, accept, or approve the SRS.
+                        </li>
+                        <li><b>Verifiable: </b>SRS is consistent from 1 level of abstraction to another.</li>
+                    </ul>
+                    </p>
+                </article>
+                <article>
+                    <h2 id="Use_Case_Modeling">Use Case Modeling</h2>
+                    <p>
+                        Use case modeling is a technique in software engineering and systems engineering that helps define,
+                        clarify, and document the interactions between various actors (such as users or other systems) and a
+                        system under development. It is a fundamental part of the Unified Modeling Language (UML), which is a
+                        standardized modeling language used in software development. Use case modeling focuses on capturing the
+                        functional requirements of a system from a user's perspective.
+                    </p>
+                    <h3 id="Goals_and_Objective">Difference Between Goals and Objective</h3>
+                    <p>
+                        Goals are typically broader, more overarching, and focused on the long term. They represent the ultimate
+                        outcome you aim to achieve. Goals are often less specific and more general in nature. They provide a
+                        direction but may not detail how to achieve the desired outcome. <br>Objectives are more specific,
+                        concrete, and focused on the short to medium term. They outline precisely what needs to be achieved to
+                        reach a goal. Objectives are actionable and often require specific tasks or actions to be taken to
+                        achieve them.
+                    <ul id="tutorial_list">
+                        <li>Goal - Long term</li>
+                        <li>Objective - Short term</li>
+                    </ul>
+                    To achieve goal you have to complete objectives. Every user has his own objectives called requirements or
+                    needs of a user. Here we use user oriented case to get requirements from user which is called <span
+                        class="discriptive" title="Stories to understand and validate system are use case diagram">use case
+                        diagram</span>.
+                    </p>
+                    <h3 id="Interaction">Interaction</h3>
+                    <p>
+                        The process of how a user communicate with the system to complete its goal or objective is known as
+                        interaction. For example: A user is given a goal to format a document. He can use this process to format
+                        a word document:
+                    <ol id="tutorial_list">
+                        <li>Change font</li>
+                        <li>Change color</li>
+                        <li>Give names to a <span class="discriptive" title="Like figure 3.1, etc">figure</span></li>
+                    </ol>
+                    </p>
+                    <h3 id="What_is_a_Scenerio">What is a Scenerio</h3>
+                    <p>
+                        A specific method to achieve a goal is called scenerio. It is called use-case modeling and are used for
+                        functional requirements of a system.There are two types of scenerio:
+                        <ul id="tutorial_list">
+                            <li>Main/Success Scenerio</li>
+                            <li>Alternative/Unsuccessfull Scenerio</li>
+                        </ul>
+                        A use-case model has three functions:
+                    <ul id="tutorial_list">
+                        <li>Use case diagram</li>
+                        <li>Actor
+                            <ul type="square">
+                                <li>Human</li>
+                                <li>Machine</li>
+                            </ul>
+                        </li>
+                        <li>Boundary of system</li>
+                    </ul>
+                    A basic example of use case model to change the format of a document is as following:
+                    <div class="figure" style="height: 400px;">
+                        <img src="Images/Use case diagram.png" alt="figure 1.1" height="100%">
+                    </div>
+                    </p>
+                    <h3 id="Advantages_of_use_case_modeling">Advantages of use-case modeling</h3>
+                    <p>
+                        Some advantages of use case modeling are discussed as:
+                    <ul id="tutorial_list">
+                        <li><b>Requirements Clarification:</b> It helps stakeholders and developers clearly understand how the
+                            system will be used and what functionality it should provide.</li>
+                        <li><b>Communication:</b> Use case diagrams provide an effective way to communicate system behavior and
+                            requirements to all project stakeholders.</li>
+                        <li><b>Testing and Validation:</b> Use cases can serve as the basis for test cases, ensuring that the
+                            system meets its intended functionality.</li>
+                        <li><b>Project Planning:</b> Use case diagrams can aid in project planning and task allocation by
+                            breaking down system functionality into manageable components.</li>
+                        <li><b>Use Case Diagram:</b> A use case represents a specific interaction between an actor (user or
+                            system) and the system being developed. It describes a particular functionality or feature of the
+                            system from the perspective of how it will be used.</li>
+                        <li><b>Actor:</b> An actor is an external entity that interacts with the system. Actors can be users,
+                            other systems, or even hardware components. Each actor typically has specific roles or
+                            responsibilities within the system.</li>
+                        <li><b>System Boundary:</b> The system boundary defines the scope of the system being modeled. It
+                            separates the system from its external actors. Use cases take place within this boundary.</li>
+                        <li><b>Relationships:</b> Use cases can have relationships with one another. Common relationships
+                            include "extends" (for optional behavior) and "includes" (for common behavior shared between use
+                            cases). These relationships help to modularize and organize the use case model.</li>
+                        <li><b>Generalization:</b> Use cases can be organized hierarchically using generalization relationships.
+                            This is similar to inheritance in object-oriented programming, where one use case (the child)
+                            inherits behavior from another (the parent).</li>
+                        <li><b>Diagram:</b> Use case diagrams are graphical representations of use cases, actors, and their
+                            relationships. These diagrams provide a visual overview of how the system interacts with its users
+                            or external systems.</li>
+                    </ul>
+                    </p>
+                    <h3 id="Use_Case_Diagram">Use Case Diagram</h3>
+                    <p>
+                        A simple but very effective model used during the analysis phase for analysing functional requirements. It is used in use case modeling as a function of a system. <br>It can also be used to gather or analyse non-functional requirements like security.
+                        <div class="figure">
+                            <img src="Images/uml" alt="figure 1.1">
+                        </div>
+                    </p>
+        
+        
+                </article>
+            </section>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
