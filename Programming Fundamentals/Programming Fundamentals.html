@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Fundamentals</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="shortcut icon" href="Images/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <div class="btn_one">
+            <label for="check">
+                <i class="btn_on i">
+                    =
+                </i>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="https://malickmati.github.io/Port/">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </label>
+        </div>
+        <div class="side_bar">
+            <div class="logo">
+                <a href="https://malickmati.github.io/Port/">Malick</a>
+            </div>
+            <div class="btn_two">
+                <label for="check">
+                    <i class="btn_close i">
+                        X
+                    </i>
+                </label>
+            </div>
+            <div class="topics">
+                <div id="page_title"><b>Programming Fundamentals</b></div>
+                <ul id="topic">
+                    <li class="Topic"><a href="#introduction_to_programming_fundamentals" onclick="op('a1');">Introduction To
+                            Programming</a></li>
+                    <li><a href="#what_is_computer">What is a Computer</a></li>
+                    <li><a href="#what_is_problem_solving">What is Problem Solving</a></li>
+                    <li><a href="#what_is_program">What is Program</a></li>
+                    <li><a href="#advantages_of_program">Advantages of Program</a></li>
+                    <li><a href="#programming_language">Programming Language</a></li>
+
+                    <li class="Topic"><a href="#levels_of_programming_language" onclick="op('a2');">Levels of Programming</a></li>
+                    <li><a href="#low_level_programming">Low Level Language</a></li>
+                    <li><a href="#machine_language">Machine Language</a></li>
+                    <li><a href="#assembly_language">Assembly Language</a></li>
+                    <li><a href="#high_level_programming">High Level Language</a></li>
+                    <li><a href="#difference_between_lowandhighlevel">Low vs High level Programming</a></li>
+
+                    <li class="Topic"><a href="#types_of_codes" onclick="op('a3');">Types of Code</a></li>
+                    <li><a href="#source_code">Source Code</a></li>
+                    <li><a href="#object_code">Object Code</a></li>
+
+                    <li class="Topic"><a href="#language_processor" onclick="op('a4');">Language Processor</a></li>
+                    <li><a href="#what_is_compiler">Compiler</a></li>
+                    <li><a href="#what_is_interpreter">Interpreter</a></li>
+                    <li><a href="#what_is_assembler">Assembler</a></li>
+
+                    <li class="Topic"><a href="#history_of_c++" onclick="op('a5');">History of C++</a></li>
+                    <li><a href="#background_of_c++">Background of C++</a></li>
+                    <li id="features"><a href="#features_of_c++">Features of C++</a></li>
+                    <li id="nav_inner_topic"><a href="#convinient_language">Convinient Language</a></li>
+                    <li id="nav_inner_topic"><a href="#well_structured_language">Well Structured Language</a></li>
+                    <li id="nav_inner_topic"><a href="#case_sensitive">Case Sensitivity</a></li>
+                    <li id="nav_inner_topic"><a href="#machine_independency">Machine Independence</a></li>
+                    <li id="nav_inner_topic"><a href="#object_orientedf">Object Oriented</a></li>
+                    <li id="nav_inner_topic"><a href="#modular_programming">Modular Programming</a></li>
+                    <li id="nav_inner_topic"><a href="#standard_libraries">Standard Libraries</a></li>
+                    <li id="nav_inner_topic"><a href="#hardware_control">Hardware Control</a></li>
+                    <li id="nav_inner_topic"><a href="#brevity">Brevity</a></li>
+                    <li id="nav_inner_topic"><a href="#speed">Speed</a></li>
+                    <li id="nav_inner_topic"><a href="#popular_language">Popular Language</a></li>
+                    <li id="nav_inner_topic"><a href="#c_compatibility">C Compatibility</a></li>
+
+                    <li class="Topic"><a href="#basic_structure_of_cpp_program" onclick="op('a6');">Basic Structure of C++</a></li>
+                    <li><a href="#preprocessing_directive">Preprocessor Directive</a></li>
+                    <li><a href="#include_preprocessor">Include Preprocessor</a></li>
+                    <li><a href="#header_files">Header Files</a></li>
+                    <li><a href="#main_function">Main() Function</a></li>
+
+                    <li class="Topic"><a href="#identifier" onclick="op('a7');">Identifier</a></li>
+                    <li><a href="#what_is_identifier">Waht is Identifier</a></li>
+                    <li><a href="#types_of_identifier">Types of Identifier</a></li>
+                    <li><a href="#keywords">Keywords</a></li>
+
+                    <li  class="Topic"><a href="#datatype" onclick="op('a8');">Datatypes</a></li>
+                    <li><a href="#variable">Variables</a></li>
+                    <li><a href="#variable_types">Variable Type</a></li>
+                    <li><a href="#variable_size">Variable Size</a></li>
+                    <li><a href="#variable_name">Variable Name</a></li>
+                    <li><a href="#scope_of_variable">Scope of Variables</a></li>
+                    <li><a href="#variable_const">Variables and Constants</a></li>
+
+                    <li class="Topic"><a href="#types_of_errors" onclick="op('a9');">Types of Errors</a></li>
+                    <li><a href="#introduction_to_errors">What is Error</a></li>
+                    <li><a href="#syntax_error">Syntax Error</a></li>
+                    <li><a href="#runtime_error">Runtime Error</a></li>
+                    <li><a href="#logical_error">Logical Error</a></li>
+
+                    <li class="Topic"><a href="#life_cycle_of_program" onclick="op('a10');">Life-Cycle of Program</a></li>
+                    <li><a href="#introduction_to_lifecop">Introduction</a></li>
+                    <li><a href="#full_lifecycle">Full Lifecycle</a></li>
+                    <li><a href="#diagram_of_lcp">Diagram</a></li>
+                    <li><a href="#what_is_ide">What is IDE</a></li>
+
+                    <li class="Topic"><a href="#type_conversion" onclick="op('a11');">Type Conversion</a></li>
+                    <li><a href="#implicit_type_conversion">Implicit Type Conversion</a></li>
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a href="#truncate">Truncate</a></li>
+                    <li><a href="#promote">Promote</a></li>
+                    <li><a href="#explicit_type_conversion">Explicit Type Conversion</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="notes">
+            <section class="tutorial">
+                <header>
+                    <h1>Programming Fundalmentals (C++)</h1>
+                    <p>University of Education Lahore, Faisalabad Campus</p>
+                </header>
+                <article id="article1">
+                    <h2 id="introduction_to_programming_fundamentals">Introduction To Programming</h2>
+                    <div>
+                        <h3 id="what_is_computer">What is a Computer</h3>
+                    <p>
+                        Common Operating Machine Purposly Used for Technology, Education and Research is known as a
+                        COMPUTER. A computer is a electronic device which takes input from a user and then process this
+                        data into information and save or store the information in its storage devices and provide us
+                        with result when desired.
+                    <ul id="tutorial_list">
+                        <li>Takes Input</li>
+                        <li>Process</li>
+                        <li>Store</li>
+                        <li>Produce Output</li>
+                    </ul>
+                    </p>
+                    <h3 id="what_is_problem_solving">What is Problem Solving</h3>
+                    <p>
+                        A problem is a situation or matter that requires proper attention to be solved. It is a process
+                        of identifying a problem and finding its best solution. It is a skill that can be developed by
+                        following a well-organized approach. <br> Different strategies, techniques and tools are used to
+                        solve a problem. Computer is a tool which is used to solve complex problems by developing
+                        computer programs. A person write instructions and computer executes them to solve a problem. A
+                        person can be good programmer if ha has skills of solving problems. <br>Different
+                        program-solving techniques are as following:
+                    <ul id="tutorial_list">
+                        <li>Program</li>
+                        <li>Algorithm</li>
+                        <li>Flowchart</li>
+                    </ul>
+                    </p>
+                    <h3 id="what_is_program">What is Program</h3>
+                    <p>
+                        A program is a set of instructions given to a computer to perform a specific task. For example,
+                        sorting numbers, calculating grades are basic examples of a program. <em>A process of writing
+                            code in order to give instructions to a computer is called Programming.</em>
+                    </p>
+                    <h3 id="advantages_of_program">Advantages of Computer Program</h3>
+                    <p>
+                        Some advantages of a computer program are as following:
+                    <ul id="tutorial_list">
+                        <li>Computer program can solve many problems by giving instructions to the computer.</li>
+                        <li>It can be used to perform a task repeatedly and quickly.</li>
+                        <li>It can process large amount of data easily.</li>
+                        <li>It can display the result in different styles.</li>
+                        <li>The processing of program is more efficient andless time consuming.</li>
+                        <li>Different types of programs are used in different fields to perform certain tasks.</li>
+                    </ul>
+                    </p>
+                    <h3 id="programming_language">Programming Language</h3>
+                    <p>
+                        A programming language is a notational system for describing instructions for computer in a
+                        machine-readable and human-readable form. There are many programming languages such as C, C++,
+                        Java, Python, Assembly etc. However, each programming language has its own programming rules,
+                        sytax and structures.
+                    </p>
+                    </div>
+                </article>
+                <article id="article2">
+                    <h2 id="levels_of_programming_language">Levels of Programming Languages</h2>
+                    <div>
+                        <h3 id="low_level_programming">Low Level Language</h3>
+                    <p>
+                        The programming languages which are easily understandable to machines but difficult to
+                        understand for human. There are two types of low level programming. ie.
+                    <ul id="tutorial_list">
+                        <li>Machine Language</li>
+                        <li>Assembly Language</li>
+                    </ul>
+                    </p>
+                    <h3 id="machine_language">Machine Language</h3>
+                    <p>
+                        Machine Language consist of binary numbers (1,0). It is difficult for a human being to write
+                        codes in machine language. Program writing, reading, debugging and upgrading in machine language
+                        is very difficult for human. Therefore the programming in Machine Language is too slow.
+                    </p>
+                    <h3 id="assembly_language">Assembly Language</h3>
+                    <p>
+                        Assembly language uses symbolic codes which easy to remember such as ADD, SUM, MOV etc. Theses
+                        symbolic codes are developed against some binary codes. So writing, reading, debugging and
+                        upgrading the programs in Assembly language become easy as compare to the Binary Language.
+                    </p>
+                    <h3 id="high_level_programming">High Level Language</h3>
+                    <p>
+                        To speed up the programming process High level Languages are developed. These languages are
+                        human friendly because these are more close to the human language. High-level languages, such as
+                        C, C++, Java, C#, Swift and Visual Basic, allow to write instructions that more like English and
+                        mathematical notations. However, High Level Languages are NOT directly understandable by the
+                        machines. They need to be translated into machine level. These languages are machine
+                        independent; i-e portable.
+                    </p>
+                    <h3 id="difference_between_lowandhighlevel">Difference Between Low and High level programming</h3>
+                    <div id="tutorial_table">
+                        The difference between low level and high level programming language is as following:
+                        <table>
+                            <thead class="table_head">
+                                <td>High Level Language</td>
+                                <td>Low Level Language</td>
+                            </thead>
+                            <tr>
+                                <td>1. High-level Languages are very easy to learn.</td>
+                                <td>1. Low-level languages are difficult to learn.</td>
+                            </tr>
+                            <tr>
+                                <td>2. High-level Languages are near to human languages.</td>
+                                <td>2. Low-level languages are far from the human languages</td>
+                            </tr>
+                            <tr>
+                                <td>3. Programs in high-level Languages are slow in execution.</td>
+                                <td>3. Programs in low-level languages are fast in execution.</td>
+                            </tr>
+                            <tr>
+                                <td>4. Programs in high-level Languages are easy to modify.</td>
+                                <td>4. Programs in low-level languages are difficult to modify</td>
+                            </tr>
+                            <tr>
+                                <td>5. High-level Languages do not provide much facility at the hardware level.</td>
+                                <td>5. Low-level languages provides facility to write programs at hardware level.</td>
+                            </tr>
+                            <tr>
+                                <td>6. Deep knowledge of hardware is not required to write programs.</td>
+                                <td>6. Deep knowledge of hardware is required to write programs.</td>
+                            </tr>
+                            <tr>
+                                <td>7. These languages are normally used to write application programs.</td>
+                                <td>7. These languages normally used to write hardware programs.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </article>
+                <article id="article3">
+                    <h2 id="types_of_codes">Types of Code</h2>
+                    <div>
+                        <p>
+                            There are two types of codes. ie.
+                        </p>
+                        <h3 id="source_code">Source Code</h3>
+                        <p>
+                            A program written in a high-level languages are also known as source code. Source code is also
+                            known as source program. Computer cannot understand the statements of high-level language. The
+                            source code can not be excuted by the computer directly. It must be converted into object code
+                            and then executed.
+                        </p>
+                        <h3 id="object_code">Object Code</h3>
+                        <p>
+                            A program in machine language is called object code. It is also called object program or machine
+                            code. Computer understand the object code directly.
+                        </p>
+                    </div>
+                </article>
+                <article id="article4">
+                    <h2 id="language_processor">Language Processor</h2>
+                    <div>
+                        <p>
+                            A language processor is a type of software program that translates the High Level Language
+                            program (source code) into Machine Language (object code). Language processor is also called
+                            language translator.
+                        <ul id="tutorial_list">
+                            <li><b>Source Code: </b>The program written by the user.</li>
+                            <li><b>Object Code: </b>The program translated into machine language.</li>
+                        </ul>
+                        </p>
+                        <h3 id="what_is_compiler">Compiler</h3>
+                        <p>
+                            Compiler converts program written in a high-level programming language into the machine code, at
+                            once, before program runs.
+                        <div class="figure" id="compiler_pic">
+                            <img src="Images/how a compiler works.png" alt="Compiler">
+                        </div>
+                        </p>
+                        <h3 id="what_is_interpreter">Interpreter</h3>
+                        <p>
+                            Interpreter converts each high-level program statement, one by one, into the machine code,
+                            during program run. Scripting languages JavaScript and PHP are processed by Interpreters.
+                        <div class="figure"><img src="Images/how a interpreter works.png" alt="Interpreter"></div>
+                        </p>
+                        <h3 id="what_is_assembler">Assembler</h3>
+                        <p>
+                            A type of converter that converts Assembly Language program into machine code.
+                        </p>
+                    </div>
+                </article>
+                <article id="article5">
+                    <h2 id="history_of_c++">History of C++</h2>
+                    <div>
+                        <h3 id="background_of_c++">Background of C++</h3>
+                    <p>
+                        Many new programming languages appeared during the 1960s. The computers at that time were still
+                        in early stage of development. The language ALGOL60 was developed as an alternative to FORTAN.
+                        <br>Ken Thompson createdB language in 1970. C language was derived from B language. The B
+                        language provided the basis for the development of C. The C language was originally designed to
+                        write programs under UNIX operating system.
+                    </p>
+                    <p>
+                        <span id="bold">Bjarne Stroustrup</span> from <span id="bold">Bell Labs</span> started the
+                        development of C++ language in 1980. The first commercial release of C++ appeared in October
+                        1985. It was originally named "C with classes". It was an improved version of C which allows the
+                        use of programming technique known as object oriented programming (OOP).
+                    </p>
+                    <h3 id="features_of_c++">Features of C++</h3>
+                    <p>
+                        Some important features of C++ are mentioned:
+                    </p>
+                    <h4 id="convinient_language">Convinient Language</h4>
+                    <p>
+                        C++ is very convinient language. It provides many facilities in easier way that are diffiluct to
+                        use in low level languages. The programmers can write more complex codes more easily as compared
+                        to low-level languages.
+                    </p>
+                    <h4 id="well_structured_language">Well Structured Language</h4>
+                    <p>
+                        C++ is well structured language. Its syntax is very easy to understand. The programs written in
+                        C++ language are very easy to maintain and modify.
+                    </p>
+                    <h4 id="case_sensitive">Case Sensitivity</h4>
+                    <p>
+                        C++ is case sensitive language. It means that it can differentiate uppercase and lowercase
+                        words. All keywords are written in lowercase. This feature makes it easier to maintain the code.
+                    </p>
+                    <h4 id="machine_independency">Machine Independence</h4>
+                    <p>
+                        C++ language provides machine independence. It means that the programs written in C++ language
+                        can be executed on different types of computers.
+                    </p>
+                    <h4 id="object_orientedf">Object Oriented</h4>
+                    <p>
+                        C++ is an object-oriented language. In object-oriented technique, the programs are written on
+                        the basis of objects. An object is a collection of data and function.
+                    </p>
+                    <h4 id="modular_programming">Modular Programming</h4>
+                    <p>
+                        C++ language provides a facility of modular programming which means that the program can be
+                        divided into modules which increases the maintainablity of code. These modules can be developed
+                        and compiled independently and then linked together.
+                    </p>
+                    <h4 id="standard_libraries">Standard Libraries</h4>
+                    <p>
+                        The standard C++ library is a set of functions, constants, classes and objects to extend C++
+                        language.
+                    </p>
+                    <h4 id="hardware_control">Hardware Control</h4>
+                    <p>
+                        C++ provides cloase control on hardware. The programmer can write efficient programs to control
+                        hardware components of computer system.
+                    </p>
+                    <h4 id="brevity">Brevity</h4>
+                    <p>
+                        C++ is a small language. It has a small number of keywords and programming controls but still
+                        very powerful for developing different types of programs. The code written in C++ is very small
+                        as compared to other languages.
+                    </p>
+                    <h4 id="speed">Speed</h4>
+                    <p>
+                        C++ compilers generate very fast code. The resulting code from a C++ compilation is very
+                        efficient. The program executes very efficiently and program takes less time to execute.
+                    </p>
+                    <h4 id="popular_language">Popular Language</h4>
+                    <p>
+                        C++ is a very widely used programming language. There are many tools available for C++
+                        programming and a broad base of programmers contributing to C++ community.
+                    </p>
+                    <h4 id="c_compatibility">C Compatibility</h4>
+                    <p>
+                        C++ is backward compatible with C language. Any code written in C language can easily be
+                        included in a C++ program without hardly making any changes.
+                    </p>
+                    </div>
+                </article>
+                <article id="article6">
+                    <h2 id="basic_structure_of_cpp_program">Basic Structure of C++ Program</h2>
+                    <div>
+                        <p>
+                            The format of writing programs in C++ is called structure. The basic structure of C++ programs
+                            in very flexible. A program in C++ consists of following parts:
+                        <ul id="tutorial_list">
+                            <li>Preprocessor directive</li>
+                            <li>Main() function</li>
+                            <li>Program body (C++ statements)</li>
+                        </ul>
+                        </p>
+                        <h3 id="preprocessing_directive">Preprocessor Directive</h3>
+                        <p>
+                            Preprocessive directives are instructions given to the preprocessor. The preprocessor directives
+                            are processed by a program known as preprocessor. It is part of C++ compiler. It is part of C++
+                            compiler. It modifies C++ source program before compilation. The semicolon is not used at the
+                            end of preprocessor directives. The preprocessor directives start with hash symbol (#). These
+                            directives are written at the start of program.
+                        </p>
+                        <h4 id="include_preprocessor">Include Preprocessor</h4>
+                        <p>
+                            Include preprocessor directive is used to include header files in the program. The syntax of
+                            using this directive is as follows:
+                        <div class="codes"><code>
+                                #include&ltiostream&gt
+                            </code></div>
+                        </p>
+                        <p>
+                            The above statement tells the compiler to include the file iostream in the source program before
+                            compiling it.
+                        </p>
+                        <h3 id="header_files">Header Files</h3>
+                        <p>
+                            Header files are collection of standard library functions and objects to perform different
+                            tasks. C++ provides many header files for different purposes. Each header file contains
+                            different type of predefined functions and objects. Many header files can be included in one
+                            program. The header file must be included in the program before calling any of its functions.
+                            The name of header file is written in angle brackets. These files are provided by C++ compiler
+                            system. <br><span id="bold">Syntax: </span> <br>The syntax of header file is as following:
+                        <div class="codes"><code>#include &ltheader file&gt</code></div> The name of header file can also be
+                        used in double quotes as follows: <div class="codes"><code>#include "header file"</code></div>
+                        </p>
+                        <p>
+                            <span id="bold">Example 1:</span>
+                        <div class="codes"><code>#include &ltiostream&gt</code></div> The above statement will include the
+                        header file named iostream in the program. The word iostream means input/output stream.
+                        </p>
+                        <h3 id="main_function">Main() Function</h3>
+                        <p>
+                            The main() function is the starting point of a C++ program. The control enters main() function
+                            and starts executing its statements when the program is run. A program that do not have main()
+                            function can be compiled but can not be executed. The syntax of main function is:
+                        <div class="codes">
+                            <div>int main()</div>
+                            <div>{</div>
+                            <div>&nbsp&nbsp&nbsp&nbspbody of main function</div>
+                            <div>}</div>
+                        </div>
+                        </p>
+                    </div>
+                </article>
+                <article id="article7">
+                    <h2 id="identifier">Identifier</h2>
+                    <div>
+                        <h3 id="what_is_identifier">Waht is Identifier</h3>
+                    <p>
+                        The identifier are the names that represent variable, constants, functions and labels in the
+                        program. Identifier is an important feature of all programming languages. A good identifier is
+                        an important feature of all programming languages.
+                    </p>
+                    <p>
+                        An identifier in C++ may consist of 31 characters. If the name of identifier is more than 31,
+                        the first 31 characters will be used.
+                    <ul id="tutorial_list">
+                        <li>The first character must be an alphabetic or underscore (_)</li>
+                        <li>The reserved keywords cannot be used as an identifier name.</li>
+                        <li>The identifier name must only consist of only alphabetics, digits or underscore.</li>
+                    </ul>
+                    </p>
+                    <h3 id="types_of_identifier">Types of Identifier</h3>
+                    <p>
+                        C++ provides the following types of identifiers:
+                    <h4>1. Standard Identifier:</h4>
+                    <p>
+                        A type of identifier that has special meaning in C++ is known as standard identifier. C++ cannot
+                        use a standard identifier for its original purpose if it is redefined.
+                    </p>
+                    <h4>Example:</h4>
+                    <p>
+                        cout and cin are examples of standard identifiers. These are the same names of input/output
+                        objects defined in standard input/output library &ltiostream&gt
+                    </p>
+                    <h4>2. User-defined Identifiers:</h4>
+                    <p>
+                        The type of identifier that is defined by the programmer to access memory location is known as
+                        user-defined identifier. The user-defined identifier are used to store data and program result.
+                    </p>
+                    <h4>Example:</h4>
+                    <p>
+                        Some examples of user-defined identifiers are "marks", "age", etc.
+                    </p>
+                    </p>
+                    <h3 id="keywords">Keywords</h3>
+                    <p>
+                        Keyword is a word in C++ that has a predefined meaning and purpose. The meaning and purpose of a
+                        keyword is defined by the developer of the language. It cannot be changed or redefined by the
+                        user. Keyword can be used for the same purpose for which it is defined. There are 63 different
+                        types of keywords in C++. The list of these keywords is:
+                    <div class="codes key">
+                        <div class="key_in">asm</div>
+                        <div class="key_in">auto</div>
+                        <div class="key_in">bool</div>
+                        <div class="key_in">break</div>
+                        <div class="key_in">case</div>
+                        <div class="key_in">catch</div>
+                        <div class="key_in">char</div>
+                        <div class="key_in">class</div>
+                        <div class="key_in"> const</div>
+                        <div class="key_in">const_cast</div>
+                        <div class="key_in">continue</div>
+                        <div class="key_in">default</div>
+                        <div class="key_in">delete</div>
+                        <div class="key_in">do</div>
+                        <div class="key_in">double</div>
+                        <div class="key_in">dynamic_cast</div>
+                        <div class="key_in">else</div>
+                        <div class="key_in">enum</div>
+                        <div class="key_in">explicit</div>
+                        <div class="key_in">export</div>
+                        <div class="key_in">extern</div>
+                        <div class="key_in">false</div>
+                        <div class="key_in">float</div>
+                        <div class="key_in">for</div>
+                        <div class="key_in">friend</div>
+                        <div class="key_in">goto</div>
+                        <div class="key_in">if</div>
+                        <div class="key_in">inline</div>
+                        <div class="key_in">int</div>
+                        <div class="key_in">long</div>
+                        <div class="key_in">mutable</div>
+                        <div class="key_in">namespace</div>
+                        <div class="key_in">new</div>
+                        <div class="key_in">operator</div>
+                        <div class="key_in">private</div>
+                        <div class="key_in">protected</div>
+                        <div class="key_in">public</div>
+                        <div class="key_in">register</div>
+                        <div class="key_in">reinterpret_cast</div>
+                        <div class="key_in">return</div>
+                        <div class="key_in">short</div>
+                        <div class="key_in">signed</div>
+                        <div class="key_in">sizeof</div>
+                        <div class="key_in">static</div>
+                        <div class="key_in">static_cast</div>
+                        <div class="key_in">struct</div>
+                        <div class="key_in">switch</div>
+                        <div class="key_in">template</div>
+                        <div class="key_in">this</div>
+                        <div class="key_in">throw</div>
+                        <div class="key_in">true</div>
+                        <div class="key_in">try</div>
+                        <div class="key_in">typedef</div>
+                        <div class="key_in">typeid</div>
+                        <div class="key_in">typename</div>
+                        <div class="key_in">union</div>
+                        <div class="key_in">unsigned</div>
+                        <div class="key_in">using</div>
+                        <div class="key_in">virtual</div>
+                        <div class="key_in">void</div>
+                        <div class="key_in">volatile</div>
+                        <div class="key_in">wchar_t</div>
+                        <div class="key_in">while</div>
+                    </div>
+                    </p>
+                    </div>
+                </article>
+                <article id="article8">
+                    <h2 id="datatype">Datatypes</h2>
+                    <div>
+                        <h3 id="variable">Variables</h3>
+                    <p>
+                        During programming we need to store data like marks, names, etc. To store these values we use
+                        variables. These variables are located in the <span class="discriptive"
+                            title="RAM">memory</span> of system. This memory is divided into blocks and each block has
+                        its own unique numberical address. To store and access these blocks of the memory, we give them
+                        a name and these are called variables. These are called variables because the value is different
+                        or may change and store different values at different time. These variables are declared using
+                        these rules:
+                    <ul id="tutorial_list">
+                        <li>Type of variable</li>
+                        <li>A name of variable</li>
+                        <li>Size of variable</li>
+                        <li>Value stored in variable</li>
+                    </ul>
+                    </p>
+                    <h3 id="variable_types">Variable Type</h3>
+                    <p>
+                        A variable must have a datatype associated with it. It is used to identify which type of data is
+                        stored in a variable. For example:
+                    <ul id="tutorial_list">
+                        <li>Integer (used for storing whole numbers)</li>
+                        <li>Float (used for storing numbers, decimal points)</li>
+                        <li>Character (used to store alphabets)</li>
+                        <li>Boolean (true/false)</li>
+                        <li>String (used to store text)</li>
+                    </ul>
+                    </p>
+                    <h3 id="variable_size">Variable Size</h3>
+                    <p>
+                        Different variables have different size. It is a datatype which tells us about the size of the
+                        variable. It depends on the IDE to assign size to a specific datatype. Here, we will discuss the
+                        size of different variables used in Dev C++. ie.
+                    <ul id="tutorial_list">
+                        <li>Integer (int) = 4 Bytes</li>
+                        <li>Float (float) = 4 Bytes</li>
+                        <li>Double (double) = 8 Bytes</li>
+                        <li>Character (char) = 1 Byte</li>
+                        <li>String (string) = 8 Bytes</li>
+                        <li>Boolean (bool) = 1 Byte</li>
+                    </ul>
+                    </p>
+                    <h3 id="variable_name">Variable Name</h3>
+                    <p>
+                        We use naming conventions to declare variable names. Variable should be given name which matches
+                        the nature of the data. Variable names should be legal. For example:
+                    <ul id="tutorial_list">
+                        <li>Names can contain series oof characters consisting of letters, digits and underscores(_)
+                        </li>
+                        <li>It can not be started by a number or digit or any special character.</li>
+                        <li>Spaces are not allowed</li>
+                        <li>Keywords or reserved words are not allowed</li>
+                        <li>Uppercase and lowercase letters are two different characters. So, a1 and A1 are different.
+                        </li>
+                    </ul>
+                    </p>
+                    <h3 id="scope_of_variable">Scope of Variables</h3>
+                    <p>
+                        In terms of scope, variables are categorized into two broad types:
+                    </p>
+                    <h4>Local Variables</h4>
+                    <p>
+                        Local variables are those whcih are declared in the body of a function. These variables are
+                        accessible within the body of the function.
+                    </p>
+                    <h4>Global Variables</h4>
+                    <p>
+                        These variables are declared outside the body of all functions. These variables are accessible
+                        anywhere in the program.
+                    </p>
+                    <h3 id="variable_const">Variables and Constants</h3>
+                    <p>
+                        Those quantities whose values can be changed throughout the program are known as Variables.
+                    <div class="codes"><code>int x = 5;</code></div> Those quantities whose values CANNOT be changed in
+                    the program. <div class="codes"><code>const int x = 5;</code></div>
+
+                    </p>
+                    </div>
+                </article>
+                <article id="article9">
+                    <h2 id="types_of_errors">Types of Errors</h2>
+                    <div>
+                        <h3 id="introduction_to_errors">What is an Error</h3>
+                    <p>
+                        Programming errors are referred to as mistakes or bugs in the program. There are three types of
+                        errors:
+                    <ol id="tutorial_list">
+                        <li>Syntax Error</li>
+                        <li>Runtime Error</li>
+                        <li>Logical Error</li>
+                    </ol>
+                    </p>
+                    <h3 id="syntax_error">Syntax Error</h3>
+                    <p>
+                        A type of error that occurs at the time of compilation. It usually occurs due to an error in the
+                        rules & regulation or structure of the program. It do not allow the program to get compiled and
+                        as a result not result in execution of program. It is very easy to find because compiler
+                        programs usually highlight the error.
+                    </p>
+                    <h3 id="runtime_error">Runtime Error</h3>
+                    <p>
+                        A type of error that occur at the time of execution. Occurs due to an illegal operation in the
+                        program such as dividing by zero, referencing an invalid file, calling invalid function. It
+                        cause the program to stop or crash. It is diffult to identify as compared to Syntax error.
+                    </p>
+                    <h3 id="logical_error">Logical Error</h3>
+                    <p>
+                        A type of error that occur at the time of execution. It usually occur due to incorrect logic or
+                        fault in the algorithm in the program such as incorrect sequence of instuctions. It do not stop
+                        the compilation or execution of the program but gives wrong output of the program. It is very
+                        hard and complex to identify.
+                    </p>
+                    </div>
+                </article>
+                <article id="article10">
+                    <h2 id="life_cycle_of_program">Life-Cycle of Program</h2>
+                    <div>
+                        <h3 id="introduction_to_lifecop">Introduction</h3>
+                    <p>
+                        Program lifecycle consist of the stages in which a program undergoes from initial creation to
+                        deployment and execution. These phases consist of:
+                    <ul id="tutorial_list">
+                        <li>Program Editting</li>
+                        <li>Pre-Processing</li>
+                        <li>Compilation</li>
+                        <li>Linking</li>
+                        <li>Loading</li>
+                        <li>Execution</li>
+                    </ul>
+                    </p>
+                    <h3 id="full_lifecycle">Full Lifecycle</h3>
+                    <p>
+                    <ul id="tutorial_list">
+                        <li><b>Program Editing: </b>Program is created in the editor and stored on disk as .cpp file
+                        </li>
+                        <li><b>Preprocessing: </b>Preprocessor program processes the code</li>
+                        <li><b>Compilation: </b>Compiler creates object code and stores it on disk as .obj file</li>
+                        <li><b>Linking: </b>Linker links the object code with the libraries and stores as .exe file</li>
+                        <li><b>Loading: </b>Loader puts program in memory</li>
+                        <li><b>Execution: </b>CPU takes each instruction and executes it, possibly storing new data
+                            values as the program executes</li>
+                    </ul>
+                    </p>
+                    <h3 id="diagram_of_lcp">Diagram</h3>
+                    <p>
+                    <div style="text-align: center;">
+                        <img src="Images/lifecycle of program.png" alt="Lifecycle"
+                            style="height: 400px; max-width: 95%;">
+                    </div>
+                    </p>
+                    <h3 id="what_is_ide">What is IDE</h3>
+                    <p>
+                        An IDE or Integrated Development Environment, is a software application that provides a
+                        comprehensive set of tools and features to assist computer programmers and software developers
+                        in creating, testing, and managing software applications. Some of the key components and
+                        features typically found in an IDE include:
+                    <ul id="tutorial_list">
+                        <li>Editor</li>
+                        <li>Compilers</li>
+                        <li>Debugger</li>
+                        <li>Linkers</li>
+                        <li>Loaders</li>
+                    </ul>
+                    </p>
+                    <p>
+                        For this course we will be using Dev C++ 5.11 as an IDE. You can download this free software by
+                        clicking this link <a class="inner_link"
+                            href="https://sourceforge.net/projects/orwelldevcpp/files/Setup%20Releases/Dev-Cpp%205.11%20TDM-GCC%204.9.2%20Setup.exe/download"
+                            target="_blank"> Dev C++</a>
+                    </p>
+                    </div>
+                </article>
+                <article id="article11">
+                    <h2 id="type_conversion">Type Conversion</h2>
+                    <div>
+                        <h3 id="implicit_type_conversion">Implicit Type Conversion</h3>
+                    <p>
+                        Type conversion allows a compiler to convert one datatype at the time of compilation of a
+                        program. This is called implicit type conversion. <br>There is a data loss when using this type
+                        of conversion. Data loss happens when data of larger type is converted into smaller type.
+                    <div class="figure"><img src="Images/data loss.png" alt="Data Loss"></div>
+                    </p>
+                    <h3 id="rules">Rules</h3>
+                    <p>
+                        There are some rules which must be kept in mind while using type conversion. These are: <br>
+                        When operating with values of different data types, the lower ranked value will be promoted to
+                        higher data type. <br>When using assignment operator (=), the type of expression on right side
+                        will be converted into type of left side variable.
+                    </p>
+                    <h3 id="truncate">Truncate</h3>
+                    <p>
+                        When a higher or upper datatype is converted into lower or smaller datatype, it gets demoted and
+                        may lose data. This process is called Truncate and datatype is truncated. For example: when an
+                        floating point value is converted into integer type value, it gets truncated.
+                    </p>
+                    <h3 id="promote">Promote</h3>
+                    <p>
+                        When a smaller or lower datatype is converted into higher or upper datatype, it gets Promoted.
+                        This makes values more accurate. For example: when an integer is converted to floating point
+                        value, is gets promoted.
+                    </p>
+                    <h3 id="explicit_type_conversion">Explicit Type Conversion</h3>
+                    <p>
+                        When the user manually changes data from one type to another, this is known as type casting.
+                        This type of conversion is also called explicit type conversion. Syntax:
+                    <div class="codes"><code>
+                                Static_cast&ltDataType&gt(Expression); <br>
+                                OR <br>
+                                (DataType) Expression;
+                            </code></div>
+                    </p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <script src="../Styles/scriptt.js"></script>
+</body>
+</html>
